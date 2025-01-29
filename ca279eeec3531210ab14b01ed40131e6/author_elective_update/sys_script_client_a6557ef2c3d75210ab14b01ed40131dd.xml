@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>validation date</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var course = g_form.getValue('course'); // Obtém o valor do campo "course"
+    var courseDate = g_form.getValue('course_date'); // Obtém o valor do campo "course_date"
+
+    var gr = new GlideRecord('x_1593182_course_0_course_schedule'); 
+    gr.addQuery('course', course); // Verifica o mesmo curso
+    gr.addQuery('course_date', courseDate); // Verifica a mesma data
+    gr.query();
+
+    // Se encontrar duplicatas, bloqueia a operação
+    if (gr.hasNext()) {
+        g_form.showFieldMsg('course_date', 'Já existe um treinamento agendado para este curso nesta data.', 'error');
+        return false; // Impede o envio do formulário
+    }
+
+    return true; // Permite a operação
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 16:21:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6557ef2c3d75210ab14b01ed40131dd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>validation date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sys_script_client_a6557ef2c3d75210ab14b01ed40131dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:25:22</sys_updated_on>
+        <table>x_1593182_course_0_course_schedule</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>sys_script_client_a6557ef2c3d75210ab14b01ed40131dd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;validation date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    var course = g_form.getValue('course'); // Obtém o valor do campo "course"
+    var courseDate = g_form.getValue('course_date'); // Obtém o valor do campo "course_date"
+
+    var gr = new GlideRecord('x_1593182_course_0_course_schedule'); 
+    gr.addQuery('course', course); // Verifica o mesmo curso
+    gr.addQuery('course_date', courseDate); // Verifica a mesma data
+    gr.query();
+
+    // Se encontrar duplicatas, bloqueia a operação
+    if (gr.hasNext()) {
+        g_form.showFieldMsg('course_date', 'Já existe um treinamento agendado para este curso nesta data.', 'error');
+        return false; // Impede o envio do formulário
+    }
+
+    return true; // Permite a operação
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 16:21:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a6557ef2c3d75210ab14b01ed40131dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;validation date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=" Course scheduling: APP"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a6557ef2c3d75210ab14b01ed40131dd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 16:25:22&lt;/sys_updated_on&gt;&lt;table&gt;x_1593182_course_0_course_schedule&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>406511629</payload_hash>
+        <record_name>validation date</record_name>
+        <reverted_from/>
+        <source>96279eeec3531210ab14b01ed40131f8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 16:25:22</sys_created_on>
+        <sys_id>3ee6be36c3d75210ab14b01ed4013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194adbb53b20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:25:22</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f2e6be36b4d752102d35937bf0f05116</update_guid>
+        <update_guid_history>f2e6be36b4d752102d35937bf0f05116:406511629,08067a3663d75210cabee3434a9386f4:-1679917510</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 16:46:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>03a1ee7b23d645388010ed0d3ffd9040</sys_id>
+        <sys_metadata>a6557ef2c3d75210ab14b01ed40131dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>validation date</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent display_value="Course Schedule">2ebd5ee6c3931210ab14b01ed40131d8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>sys_script_client_a6557ef2c3d75210ab14b01ed40131dd</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a6557ef2c3d75210ab14b01ed40131dd">3ee6be36c3d75210ab14b01ed4013116</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:46:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

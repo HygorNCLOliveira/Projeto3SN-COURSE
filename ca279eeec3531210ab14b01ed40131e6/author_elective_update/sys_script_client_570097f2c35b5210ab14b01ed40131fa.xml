@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>course_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ValidateUniqueCourseAndDate</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) {
+        return; // Ignora o script quando o formulário está carregando
+    }
+
+    // Obtém os valores do Nome do Curso e Data
+    var courseName = g_form.getValue('course'); // Campo de nome do curso
+    var courseDate = g_form.getValue('course_date'); // Campo de data
+
+    // Verifica se ambos os campos estão preenchidos
+    if (!courseName || !courseDate) {
+        return; // Não faz nada se algum dos campos não foi preenchido
+    }
+
+    // Chama o GlideAjax para validar a duplicidade
+    var ga = new GlideAjax('ValidateUniqueCourseAndDate');
+    ga.addParam('sysparm_name', 'isDuplicateAjax'); // Método público
+    ga.addParam('sysparm_courseName', courseName);
+    ga.addParam('sysparm_courseDate', courseDate);
+
+    ga.getXMLAnswer(function(response) {
+        var isDuplicate = response === 'true'; // Verifica se já existe um registro com os mesmos dados
+        if (isDuplicate) {
+            g_form.addErrorMessage('Já existe um registro com o mesmo Nome do Curso e Data.');
+            g_form.setFieldError('course', 'Duplicado'); // Sinaliza erro no campo 'course'
+            g_form.setFieldError('course_date', 'Duplicado'); // Sinaliza erro no campo 'course_date'
+        } else {
+            g_form.clearMessages(); // Limpa qualquer mensagem anterior
+        }
+
+        // Impede a submissão do formulário caso haja duplicidade
+        if (isDuplicate) {
+            g_form.setValue('course', oldValue); // Restaura o valor anterior se houver duplicidade
+            g_form.setValue('course_date', oldValue); // Restaura o valor anterior da data
+            return false; // Bloqueia a criação do registro
+        }
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 18:17:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>570097f2c35b5210ab14b01ed40131fa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>ValidateUniqueCourseAndDate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sys_script_client_570097f2c35b5210ab14b01ed40131fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:01:43</sys_updated_on>
+        <table>x_1593182_course_0_course_schedule</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>sys_script_client_570097f2c35b5210ab14b01ed40131fa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;course_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;ValidateUniqueCourseAndDate&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) {
+        return; // Ignora o script quando o formulário está carregando
+    }
+
+    // Obtém os valores do Nome do Curso e Data
+    var courseName = g_form.getValue('course'); // Campo de nome do curso
+    var courseDate = g_form.getValue('course_date'); // Campo de data
+
+    // Verifica se ambos os campos estão preenchidos
+    if (!courseName || !courseDate) {
+        return; // Não faz nada se algum dos campos não foi preenchido
+    }
+
+    // Chama o GlideAjax para validar a duplicidade
+    var ga = new GlideAjax('ValidateUniqueCourseAndDate');
+    ga.addParam('sysparm_name', 'isDuplicateAjax'); // Método público
+    ga.addParam('sysparm_courseName', courseName);
+    ga.addParam('sysparm_courseDate', courseDate);
+
+    ga.getXMLAnswer(function(response) {
+        var isDuplicate = response === 'true'; // Verifica se já existe um registro com os mesmos dados
+        if (isDuplicate) {
+            g_form.addErrorMessage('Já existe um registro com o mesmo Nome do Curso e Data.');
+            g_form.setFieldError('course', 'Duplicado'); // Sinaliza erro no campo 'course'
+            g_form.setFieldError('course_date', 'Duplicado'); // Sinaliza erro no campo 'course_date'
+        } else {
+            g_form.clearMessages(); // Limpa qualquer mensagem anterior
+        }
+
+        // Impede a submissão do formulário caso haja duplicidade
+        if (isDuplicate) {
+            g_form.setValue('course', oldValue); // Restaura o valor anterior se houver duplicidade
+            g_form.setValue('course_date', oldValue); // Restaura o valor anterior da data
+            return false; // Bloqueia a criação do registro
+        }
+    });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 18:17:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;570097f2c35b5210ab14b01ed40131fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;ValidateUniqueCourseAndDate&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=" Course scheduling: APP"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_570097f2c35b5210ab14b01ed40131fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 19:01:43&lt;/sys_updated_on&gt;&lt;table&gt;x_1593182_course_0_course_schedule&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>464177905</payload_hash>
+        <record_name>ValidateUniqueCourseAndDate</record_name>
+        <reverted_from/>
+        <source>96279eeec3531210ab14b01ed40131f8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:01:44</sys_created_on>
+        <sys_id>09bad732c39b5210ab14b01ed401319e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ae4a79e60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:01:44</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>cdbad7327a9b52108d9a57e66391ee9d</update_guid>
+        <update_guid_history>cdbad7327a9b52108d9a57e66391ee9d:464177905,222a5bfec25b52109385c54d3bcc4a85:969970654,5e79937eac5b5210c366c239c6757b47:1336129258,3de8d7be3c5b52100b39a8bedeb3431c:-181917151,5c88537ee05b5210a40a41307edbddf7:810898568,4c7793fa205b5210c465f181d53b8a37:736429547,11e6d33e295b5210d6135645b1a5d209:52513709,3ed6d3fa905b5210b02c9d84831eca60:-1489985460,cc0697ba265b5210537599e74d98c2fd:-2065208205,e945133aed5b521063dbff9ecb957845:1594351634,ec84d33a395b5210a45cb0c855904c48:104187309,e802d736505b5210a7568ee8808e876b:-1751320779,1a70d77e491b5210e94c90ab82e71892:-747683860</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:02:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2032528d19864ed5970036deb49f71a1</sys_id>
+        <sys_metadata>570097f2c35b5210ab14b01ed40131fa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ValidateUniqueCourseAndDate</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent display_value="Course Schedule">2ebd5ee6c3931210ab14b01ed40131d8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>sys_script_client_570097f2c35b5210ab14b01ed40131fa</sys_update_name>
+        <sys_update_version display_value="sys_script_client_570097f2c35b5210ab14b01ed40131fa">09bad732c39b5210ab14b01ed401319e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:02:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

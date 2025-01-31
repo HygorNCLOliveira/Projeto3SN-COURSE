@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Courses">a451f5fbc35f5210ab14b01ed40131d6</dashboard>
+        <dashboard_tab display_value="New Tab 2">ac51f53fc35f5210ab14b01ed401311d</dashboard_tab>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 13:55:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ec51f53fc35f5210ab14b01ed4013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>par_dashboard_canvas_ec51f53fc35f5210ab14b01ed4013139</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 13:55:13</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>par_dashboard_canvas_ec51f53fc35f5210ab14b01ed4013139</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="Courses">a451f5fbc35f5210ab14b01ed40131d6</dashboard><dashboard_tab display_value="New Tab 2">ac51f53fc35f5210ab14b01ed401311d</dashboard_tab><layout>[]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-31 13:55:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ec51f53fc35f5210ab14b01ed4013139</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package><sys_policy/><sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope><sys_update_name>par_dashboard_canvas_ec51f53fc35f5210ab14b01ed4013139</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-31 13:55:13</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>326754340</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>85dd72cbc39b9210ab14b01ed401315f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 13:55:13</sys_created_on>
+        <sys_id>ec51f53fc35f5210ab14b01ed401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194bca4f07d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 13:55:13</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>e051f53f4f5f5210c28da8c05312483b</update_guid>
+        <update_guid_history>e051f53f4f5f5210c28da8c05312483b:326754340</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">427271bfc35f5210ab14b01ed401315c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:00:14</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>6fe8284f5304417391ae293b80ae2399</sys_id>
+        <sys_metadata>ec51f53fc35f5210ab14b01ed4013139</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_ec51f53fc35f5210ab14b01ed4013139</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_ec51f53fc35f5210ab14b01ed4013139">ec51f53fc35f5210ab14b01ed401313b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:00:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

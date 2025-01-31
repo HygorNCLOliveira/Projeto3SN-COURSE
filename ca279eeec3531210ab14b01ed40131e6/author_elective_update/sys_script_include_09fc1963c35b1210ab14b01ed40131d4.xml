@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593182_course_0.GetAvailableCourseDates</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetAvailableCourseDates</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetAvailableCourseDates = Class.create();
+GetAvailableCourseDates.prototype = {
+    initialize: function() {},
+
+    refQualCourseDates: function(courseSysId) {
+        var availableDates = [];
+        var today = new GlideDate();
+        today.addDaysUTC(1); // Somente datas futuras
+
+        var gr = new GlideRecord("x_1593182_course_0_course_schedule");
+        gr.addQuery("course", courseSysId); // Filtra pelo sys_id do curso
+        gr.addQuery("course_date", ">=", today); // Somente datas futuras
+        gr.orderBy("course_date"); // Ordena em ordem crescente
+        gr.query();
+
+        // Adicionando somente as datas no filtro
+        while (gr.next()) {
+            availableDates.push(gr.course_date.toString()); // Apenas a data do curso
+        }
+
+        return "course_dateIN" + availableDates.join(","); // Retorna somente os sys_ids das datas de curso
+    },
+
+    type: 'GetAvailableCourseDates'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:48:25</sys_created_on>
+        <sys_id>09fc1963c35b1210ab14b01ed40131d4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>GetAvailableCourseDates</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sys_script_include_09fc1963c35b1210ab14b01ed40131d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:52:20</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>09fc1963c35b1210ab14b01ed40131d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:48:25</sys_created_on>
+        <sys_id>f61d1dafc31b1210ab14b01ed40131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:48:25</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>sys_script_include_09fc1963c35b1210ab14b01ed40131d4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593182_course_0.GetAvailableCourseDates&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GetAvailableCourseDates&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetAvailableCourseDates = Class.create();
+GetAvailableCourseDates.prototype = {
+    initialize: function() {},
+
+    refQualCourseDates: function(courseSysId) {
+        var availableDates = [];
+        var today = new GlideDate();
+        today.addDaysUTC(1); // Somente datas futuras
+
+        var gr = new GlideRecord("x_1593182_course_0_course_schedule");
+        gr.addQuery("course", courseSysId); // Filtra pelo sys_id do curso
+        gr.addQuery("course_date", "&gt;=", today); // Somente datas futuras
+        gr.orderBy("course_date"); // Ordena em ordem crescente
+        gr.query();
+
+        // Adicionando somente as datas no filtro
+        while (gr.next()) {
+            availableDates.push(gr.course_date.toString()); // Apenas a data do curso
+        }
+
+        return "course_dateIN" + availableDates.join(","); // Retorna somente os sys_ids das datas de curso
+    },
+
+    type: 'GetAvailableCourseDates'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 17:48:25&lt;/sys_created_on&gt;&lt;sys_id&gt;09fc1963c35b1210ab14b01ed40131d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetAvailableCourseDates&lt;/sys_name&gt;&lt;sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value=" Course scheduling: APP"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_09fc1963c35b1210ab14b01ed40131d4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-30 18:52:20&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;09fc1963c35b1210ab14b01ed40131d4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 17:48:25&lt;/sys_created_on&gt;&lt;sys_id&gt;f61d1dafc31b1210ab14b01ed40131be&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-30 17:48:25&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>948409533</payload_hash>
+        <record_name>GetAvailableCourseDates</record_name>
+        <reverted_from/>
+        <source>85dd72cbc39b9210ab14b01ed401315f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 18:52:20</sys_created_on>
+        <sys_id>07bbeda3c39b1210ab14b01ed40131c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b88e99720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:52:20</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>4bbbeda3969b12109cac2467fa24bac3</update_guid>
+        <update_guid_history>4bbbeda3969b12109cac2467fa24bac3:948409533,39aa69a3879b1210b88e948957814287:188200915,e878a96f695b121032a2954f9ac6ebdc:-849040974,9c03a52b7e5b121049d8bcd3c5c94bff:1323848064,5552652baa5b12102d255c47d9f541f4:1779650713,031d51efdd1b1210ca5506d7c6701b0e:351528719</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 18:53:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>343af5cc08ac47f09cea8e10841d1040</sys_id>
+        <sys_metadata>09fc1963c35b1210ab14b01ed40131d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetAvailableCourseDates</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>sys_script_include_09fc1963c35b1210ab14b01ed40131d4</sys_update_name>
+        <sys_update_version display_value="sys_script_include_09fc1963c35b1210ab14b01ed40131d4">07bbeda3c39b1210ab14b01ed40131c4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:53:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

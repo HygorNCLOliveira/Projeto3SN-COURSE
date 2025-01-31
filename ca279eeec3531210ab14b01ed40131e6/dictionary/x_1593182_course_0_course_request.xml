@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b7fe5a6ac3931210ab14b01ed4013176" extends="task" label="Course Request" max_length="40" name="x_1593182_course_0_course_request" type="collection">
-        <element label="Course" max_length="32" name="course" reference="x_1593182_course_0_course_schedule" type="reference"/>
+        <element choice="3" label="Course" max_length="32" name="course" reference="x_1593182_course_0_course" type="reference">
+            <choice/>
+        </element>
+        <element label="Course Date" max_length="40" name="course_date" reference="x_1593182_course_0_course_schedule" type="glide_date"/>
     </element>
 </database>

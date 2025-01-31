@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_1593182_course_0_m2m_crs_request_crs_schedule" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_1593182_course_0_course_request</element>
+            <list_id display_value="x_1593182_course_0_m2m_crs_request_crs_schedule" element="NULL" name="x_1593182_course_0_m2m_crs_request_crs_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c24f6cabc3571210ab14b01ed401315f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-30 14:28:13</sys_created_on>
+            <sys_id>464f6cabc3571210ab14b01ed4013160</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-30 14:28:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_1593182_course_0_course_schedule</element>
+            <list_id display_value="x_1593182_course_0_m2m_crs_request_crs_schedule" element="NULL" name="x_1593182_course_0_m2m_crs_request_crs_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c24f6cabc3571210ab14b01ed401315f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-30 14:28:13</sys_created_on>
+            <sys_id>4e4f6cabc3571210ab14b01ed4013160</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-30 14:28:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1593182_course_0_m2m_crs_request_crs_schedule</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-30 14:28:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c24f6cabc3571210ab14b01ed401315f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1593182_course_0_m2m_crs_request_crs_schedule</sys_name>
+            <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+            <sys_update_name>sys_ui_list_x_1593182_course_0_m2m_crs_request_crs_schedule_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-30 14:28:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>sys_ui_list_x_1593182_course_0_m2m_crs_request_crs_schedule_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1593182_course_0_m2m_crs_request_crs_schedule" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>x_1593182_course_0_course_request</element><list_id display_value="x_1593182_course_0_m2m_crs_request_crs_schedule" element="NULL" name="x_1593182_course_0_m2m_crs_request_crs_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c24f6cabc3571210ab14b01ed401315f</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-30 14:28:13</sys_created_on><sys_id>464f6cabc3571210ab14b01ed4013160</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-30 14:28:13</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>x_1593182_course_0_course_schedule</element><list_id display_value="x_1593182_course_0_m2m_crs_request_crs_schedule" element="NULL" name="x_1593182_course_0_m2m_crs_request_crs_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c24f6cabc3571210ab14b01ed401315f</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-30 14:28:13</sys_created_on><sys_id>4e4f6cabc3571210ab14b01ed4013160</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-30 14:28:13</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1593182_course_0_m2m_crs_request_crs_schedule</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-30 14:28:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c24f6cabc3571210ab14b01ed401315f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1593182_course_0_m2m_crs_request_crs_schedule</sys_name><sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package><sys_policy/><sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope><sys_update_name>sys_ui_list_x_1593182_course_0_m2m_crs_request_crs_schedule_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-30 14:28:13</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>-710025167</payload_hash>
+        <record_name>x_1593182_course_0_m2m_Course Requests_Course Schedules</record_name>
+        <reverted_from/>
+        <source>85dd72cbc39b9210ab14b01ed401315f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 14:28:13</sys_created_on>
+        <sys_id>8e4f6cabc3571210ab14b01ed4013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b79cc9910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 14:28:13</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>4e4f6cab90571210c00962a7bf494e62</update_guid>
+        <update_guid_history>4e4f6cab90571210c00962a7bf494e62:-710025167</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:30:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>000d20229ba14df4800002fc98405a10</sys_id>
+        <sys_metadata>c24f6cabc3571210ab14b01ed401315f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593182_course_0_m2m_crs_request_crs_schedule</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent display_value="">2e2fa46bc3571210ab14b01ed401314e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_1593182_course_0_m2m_crs_request_crs_schedule_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_1593182_course_0_m2m_crs_request_crs_schedule_null">8e4f6cabc3571210ab14b01ed4013162</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:30:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

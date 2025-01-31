@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1593182_course_0.NoScriptInclude</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>NoScriptInclude</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var NoScriptInclude = Class.create();
+NoScriptInclude.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+   
+    // Método simples para testar a conexão
+    noScriptInclude: function() {
+        // Retorna uma resposta simples
+        return alert('No script include');
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:57:05</sys_created_on>
+        <sys_id>a580709bc3d3d210ab14b01ed4013120</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>NoScriptInclude</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sys_script_include_a580709bc3d3d210ab14b01ed4013120</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 20:53:24</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>a580709bc3d3d210ab14b01ed4013120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:57:05</sys_created_on>
+        <sys_id>75f0fc1bc3d3d210ab14b01ed401310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 19:57:05</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>sys_script_include_a580709bc3d3d210ab14b01ed4013120</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593182_course_0.NoScriptInclude&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;NoScriptInclude&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var NoScriptInclude = Class.create();
+NoScriptInclude.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+   
+    // Método simples para testar a conexão
+    noScriptInclude: function() {
+        // Retorna uma resposta simples
+        return alert('No script include');
+    }
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-29 19:57:05&lt;/sys_created_on&gt;&lt;sys_id&gt;a580709bc3d3d210ab14b01ed4013120&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;NoScriptInclude&lt;/sys_name&gt;&lt;sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value=" Course scheduling: APP"&gt;ca279eeec3531210ab14b01ed40131e6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a580709bc3d3d210ab14b01ed4013120&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-29 20:53:24&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a580709bc3d3d210ab14b01ed4013120&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-29 19:57:05&lt;/sys_created_on&gt;&lt;sys_id&gt;75f0fc1bc3d3d210ab14b01ed401310d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-29 19:57:05&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>446574059</payload_hash>
+        <record_name>NoScriptInclude</record_name>
+        <reverted_from/>
+        <source>85dd72cbc39b9210ab14b01ed401315f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 20:53:25</sys_created_on>
+        <sys_id>3add709fc317d210ab14b01ed4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b3d716870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 20:53:25</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>bedd709f7d17d2105e5100edc65de792</update_guid>
+        <update_guid_history>bedd709f7d17d2105e5100edc65de792:446574059,d2ad709f1817d210603be8755f13238c:-647340795,228cf81f8517d21067123121a48dcaf9:1457781432,a0eb30db6b17d210e90817b53630139a:-809125985,c57bb4dbe917d2107497417f3aeee498:892512208,ff5bf49baf17d2101a2a187dfa41563a:576077359,cf2b30d7d517d210277d983dbdc1a983:892512208,d61b34d71017d2106d0a4f766920af43:-809125985,26daf85b2017d210d73d2d809e1d6a28:-306031732,38e7b8574717d2107083fb8b2cb17875:-474685093,8fd7b457b117d210b735ebdd007681e9:-1368292292,21963c17ac17d21069c2a51b200758a4:1659570338,9ad5b8536617d2101acd43f06ce98761:-930502814,1fc5f893ed17d2106390f5fbe0c84f17:905778787,3ba3b853c717d21019cdf78149468765:1112726695,90f2349f02d3d2108f1e2401826121d9:-2748531,6551349f46d3d210b010682ce5ceddc5:270338091,35f0709b1cd3d21051fcf99d76323c39:1113564805</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 14:10:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>64d8d73692014e25b30aa81f73db34e1</sys_id>
+        <sys_metadata>a580709bc3d3d210ab14b01ed4013120</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NoScriptInclude</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>sys_script_include_a580709bc3d3d210ab14b01ed4013120</sys_update_name>
+        <sys_update_version display_value="sys_script_include_a580709bc3d3d210ab14b01ed4013120">3add709fc317d210ab14b01ed4013193</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 14:10:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

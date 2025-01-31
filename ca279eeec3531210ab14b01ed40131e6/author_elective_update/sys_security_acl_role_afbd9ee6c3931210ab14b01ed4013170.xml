@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:56:54</sys_created_on>
+        <sys_id>afbd9ee6c3931210ab14b01ed4013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593182_course_0_course_schedule.x_1593182_course_0.instructor</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_security_acl display_value="x_1593182_course_0_course_schedule">e7bd9ee6c3931210ab14b01ed401316d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_afbd9ee6c3931210ab14b01ed4013170</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:56:54</sys_updated_on>
+        <sys_user_role display_value="x_1593182_course_0.instructor" name="x_1593182_course_0.instructor">96279eeec3531210ab14b01ed40131fe</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>sys_security_acl_role_afbd9ee6c3931210ab14b01ed4013170</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-27 19:56:54</sys_created_on><sys_id>afbd9ee6c3931210ab14b01ed4013170</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1593182_course_0_course_schedule.x_1593182_course_0.instructor</sys_name><sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package><sys_policy/><sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope><sys_security_acl display_value="x_1593182_course_0_course_schedule">e7bd9ee6c3931210ab14b01ed401316d</sys_security_acl><sys_update_name>sys_security_acl_role_afbd9ee6c3931210ab14b01ed4013170</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-27 19:56:54</sys_updated_on><sys_user_role display_value="x_1593182_course_0.instructor" name="x_1593182_course_0.instructor">96279eeec3531210ab14b01ed40131fe</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-414821078</payload_hash>
+        <record_name>x_1593182_course_0_course_schedule.x_1593182_course_0.instructor</record_name>
+        <reverted_from/>
+        <source>96279eeec3531210ab14b01ed40131f8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:56:54</sys_created_on>
+        <sys_id>63bddee6c3931210ab14b01ed4013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a956a0530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:56:54</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>67bddee60e931210d710e5e0b30d3021</update_guid>
+        <update_guid_history>67bddee60e931210d710e5e0b30d3021:-414821078</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1593182_course_0_course_schedule.x_1593182_course_0.instructor">e6d9881fc313d210ab14b01ed40131da</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 17:06:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>343d0933fa45451bad62242d83120021</sys_id>
+        <sys_metadata>afbd9ee6c3931210ab14b01ed4013170</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593182_course_0_course_schedule.x_1593182_course_0.instructor</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_afbd9ee6c3931210ab14b01ed4013170</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_afbd9ee6c3931210ab14b01ed4013170">63bddee6c3931210ab14b01ed4013122</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 17:06:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

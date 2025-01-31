@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>true</can_share>
+        <can_write>true</can_write>
+        <dashboard display_value="Courses">a451f5fbc35f5210ab14b01ed40131d6</dashboard>
+        <group/>
+        <owner>true</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 13:55:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6851f5fbc35f5210ab14b01ed40131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a451f5fbc35f5210ab14b01ed40131d6</sys_name>
+        <sys_overrides/>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>par_dashboard_permission_6851f5fbc35f5210ab14b01ed40131da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 13:55:13</sys_updated_on>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</application>
+        <file_path/>
+        <instance_id>bfb983c3dbce79d0ba7f684e13961980</instance_id>
+        <instance_name>dev195858</instance_name>
+        <name>par_dashboard_permission_6851f5fbc35f5210ab14b01ed40131da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>true</can_share><can_write>true</can_write><dashboard display_value="Courses">a451f5fbc35f5210ab14b01ed40131d6</dashboard><group/><owner>true</owner><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-31 13:55:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6851f5fbc35f5210ab14b01ed40131da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>a451f5fbc35f5210ab14b01ed40131d6</sys_name><sys_overrides/><sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package><sys_policy/><sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope><sys_update_name>par_dashboard_permission_6851f5fbc35f5210ab14b01ed40131da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-31 13:55:13</sys_updated_on><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>-724436581</payload_hash>
+        <record_name>a451f5fbc35f5210ab14b01ed40131d6</record_name>
+        <reverted_from/>
+        <source>85dd72cbc39b9210ab14b01ed401315f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 13:55:13</sys_created_on>
+        <sys_id>2c51f53fc35f5210ab14b01ed4013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194bca4ef8b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 13:55:13</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>ec51f53fd55f5210e039427bd6887e11</update_guid>
+        <update_guid_history>ec51f53fd55f5210e039427bd6887e11:-724436581</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8a7271bfc35f5210ab14b01ed4013162</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:00:14</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>5a5e5ec0895b4c248ed235b25e33d184</sys_id>
+        <sys_metadata>6851f5fbc35f5210ab14b01ed40131da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a451f5fbc35f5210ab14b01ed40131d6</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_scope_delete display_value="">0300a344f1bf49269868cfbdd2b5a844</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_6851f5fbc35f5210ab14b01ed40131da</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_6851f5fbc35f5210ab14b01ed40131da">2c51f53fc35f5210ab14b01ed4013112</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:00:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

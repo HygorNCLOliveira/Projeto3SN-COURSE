@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1593182_course_0.couseUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>couseUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CourseUtils = Class.create();
+CourseUtils.prototype = {
+    initialize: function() {},
+
+    // Verifica se o usuário já se matriculou no curso mais de 3 vezes
+    hasExceededEnrollmentLimit: function(userSysId, courseSysId) {
+        var grEnrollment = new GlideRecord("x_1593182_course_0_course_schedule");
+        grEnrollment.addQuery("course", courseSysId);
+        grEnrollment.addQuery("opened_by", userSysId);
+        grEnrollment.query();
+
+        var count = 0;
+        while (grEnrollment.next()) {
+            count++;
+            if (count >= 3) {
+                return true; // O usuário já atingiu o limite de 3 inscrições
+            }
+        }
+        return false;
+    },
+
+    // Verifica se ainda há vagas no treinamento
+    isTrainingFull: function(courseScheduleSysId) {
+        var grSchedule = new GlideRecord("x_1593182_course_0_course_schedule");
+        if (grSchedule.get(courseScheduleSysId)) {
+            var maxCapacity = grSchedule.max_capacity; // Certifique-se de que este campo existe na tabela
+            var enrolledCount = grSchedule.enrolled_count; // Número de inscritos
+            return enrolledCount >= maxCapacity; // Retorna true se já atingiu a lotação máxima
+        }
+        return false;
+    },
+
+    // Verifica se o usuário é o instrutor do treinamento
+    isUserInstructor: function(userSysId, courseScheduleSysId) {
+        var grSchedule = new GlideRecord("x_1593182_course_0_course_schedule");
+        if (grSchedule.get(courseScheduleSysId)) {
+            return grSchedule.instructor == userSysId; // Retorna true se o usuário for o instrutor
+        }
+        return false;
+    },
+
+    // Verifica se o treinamento está no prazo permitido para matrícula (até 1 dia antes)
+    isRegistrationClosed: function(courseScheduleSysId) {
+        var grSchedule = new GlideRecord("x_1593182_course_0_course_schedule");
+        if (grSchedule.get(courseScheduleSysId)) {
+            var today = new GlideDate();
+            var trainingDate = new GlideDate();
+            trainingDate.setValue(grSchedule.course_date);
+
+            today.addDaysLocalTime(1); // Adiciona um dia à data atual para comparação
+            return today.compareTo(trainingDate) >= 0; // Retorna true se já passou do prazo
+        }
+        return false;
+    },
+
+    // Método principal para verificar todas as regras ao mesmo tempo
+    validateEnrollment: function(userSysId, courseSysId, courseScheduleSysId) {
+        if (this.hasExceededEnrollmentLimit(userSysId, courseSysId)) {
+            return "Limite de 3 matrículas por curso atingido.";
+        }
+        if (this.isTrainingFull(courseScheduleSysId)) {
+            return "Treinamento já atingiu a lotação máxima.";
+        }
+        if (this.isUserInstructor(userSysId, courseScheduleSysId)) {
+            return "Instrutores não podem se inscrever em seus próprios treinamentos.";
+        }
+        if (this.isRegistrationClosed(courseScheduleSysId)) {
+            return "Matrículas encerradas. Você só pode se matricular até 1 dia antes do treinamento.";
+        }
+        return "OK"; // Todas as regras passaram, pode se matricular
+    },
+
+    type: "CourseUtils"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 22:32:09</sys_created_on>
+        <sys_id>4347e7ffc3979210ab14b01ed40131db</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>couseUtils</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sys_script_include_4347e7ffc3979210ab14b01ed40131db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:02:13</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4347e7ffc3979210ab14b01ed40131db</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 22:32:09</sys_created_on>
+        <sys_id>34a7237fc3979210ab14b01ed4013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 22:32:09</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

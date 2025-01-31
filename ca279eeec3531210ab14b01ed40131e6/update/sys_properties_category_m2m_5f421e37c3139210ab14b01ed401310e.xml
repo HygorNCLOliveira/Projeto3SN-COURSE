@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Course request">03f052f3c3139210ab14b01ed40131f3</category>
+        <order>400</order>
+        <property display_value="x_1593182_course_0.integration_retry_timeout" name="x_1593182_course_0.integration_retry_timeout">1432debbc3df5210ab14b01ed40131ac</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 16:19:19</sys_created_on>
+        <sys_id>5f421e37c3139210ab14b01ed401310e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593182_course_0.integration_retry_timeout.Course request</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_5f421e37c3139210ab14b01ed401310e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 16:19:19</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

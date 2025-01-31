@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Course Registration">73518f03c3db9210ab14b01ed401317e</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:10:04</sys_created_on>
+        <sys_id>d5f52053c3d3d210ab14b01ed40131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Course Registration.Courses - Users</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_d5f52053c3d3d210ab14b01ed40131e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 19:10:04</sys_updated_on>
+        <user_criteria display_value="Courses - Users">44066053c3d3d210ab14b01ed40131ba</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>

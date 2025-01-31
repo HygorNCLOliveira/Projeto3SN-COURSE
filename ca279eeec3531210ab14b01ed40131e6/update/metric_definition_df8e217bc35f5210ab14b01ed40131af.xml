@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="metric_definition">
+    <metric_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <field>state</field>
+        <name>course requested state</name>
+        <number>MTRC0010004</number>
+        <order>100</order>
+        <script/>
+        <sys_class_name>metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 13:48:28</sys_created_on>
+        <sys_id>df8e217bc35f5210ab14b01ed40131af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>course requested state</sys_name>
+        <sys_package display_value=" Course scheduling: APP" source="x_1593182_course_0">ca279eeec3531210ab14b01ed40131e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value=" Course scheduling: APP">ca279eeec3531210ab14b01ed40131e6</sys_scope>
+        <sys_update_name>metric_definition_df8e217bc35f5210ab14b01ed40131af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 13:48:28</sys_updated_on>
+        <table>x_1593182_course_0_course_request</table>
+        <timeline>false</timeline>
+        <type>field_value_duration</type>
+    </metric_definition>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>df8e217bc35f5210ab14b01ed40131af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 13:48:28</sys_created_on>
+        <sys_id>a5cfe5f7c35f5210ab14b01ed4013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 13:48:28</sys_updated_on>
+        <table>metric_definition</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
